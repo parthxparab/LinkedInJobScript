@@ -1,4 +1,4 @@
-# LinkedIn Job Remove Script
+# LinkedIn Remove All Expired Jobs Script
 
 This is a simple Client side JavaScript Code which removes all expired or 'No longer accepting applications' jobs from your saved jobs on LinkedIn.  
 
