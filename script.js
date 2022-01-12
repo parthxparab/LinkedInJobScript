@@ -24,7 +24,7 @@ for (let j = 0; j < jobListCount; j++) {
         "nolongeracceptingapplications"
       ) {
         unsaveButton = job.querySelector(".artdeco-dropdown__content-inner");
-        btnId = unsaveButton.children[2].id;
+        btnId = unsaveButton.children[4].id;
         btnLst.push(String(btnId));
       }
     }
