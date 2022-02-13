@@ -11,6 +11,7 @@ nextBtn = document.getElementsByClassName(
 );
 
 for (let j = 0; j < jobListCount; j++) {
+
   var allJobs = document.getElementsByClassName(
     "reusable-search__result-container"
   );
@@ -23,13 +24,13 @@ for (let j = 0; j < jobListCount; j++) {
         noJobText.textContent.replace(/\s+/g, "").toLowerCase() ===
         "nolongeracceptingapplications"
       ) {
-        unsaveButton = job.querySelector(".artdeco-dropdown__content-inner");
-        btnId = unsaveButton.children[4].id;
+        unsaveButton = job.querySelectorAll(".artdeco-dropdown__content-inner > [role=button]")[1]
+        btnId = unsaveButton.id;
         btnLst.push(String(btnId));
+
       }
     }
   });
-
   btnLstLen = btnLst.length;
 
   if (btnLstLen > 0) {
@@ -43,4 +44,4 @@ for (let j = 0; j < jobListCount; j++) {
   nextBtn[0].click();
 
   await timer(5000);
-}
+  }
